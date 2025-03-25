@@ -1,6 +1,10 @@
 public class MyClass{
 
     public static void main(String args []){
+        // formas de inicializar um array 
+        int xarray[] = {78, 36, 21, 15};
+        int[] yarray = {78, 36, 21, 15};
+
         int[] mArray = new int[3];
 
         System.out.println("Tamanho do array: " + mArray.length);
