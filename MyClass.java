@@ -23,5 +23,6 @@ public class MyClass{
         System.out.println(aList.containsAll(bList));
         System.out.println(aList.removeAll(bList));
         System.out.println(aList);
+        System.out.println(aList.indexOf(100));
     }
 }
