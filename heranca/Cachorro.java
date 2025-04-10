@@ -8,6 +8,10 @@ public class Cachorro extends Animal{
 
     @Override
     public String toString() {
-        return "Eu sou um cachorro";
+        return  "Eu sou um cachorro au au au";
+    }
+
+    public String meu_peso(){
+        return "Au au. Meu peso: " + getPeso();
     }
 }

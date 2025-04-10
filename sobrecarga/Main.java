@@ -4,6 +4,10 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(Estudante.getNumero_estudante(2., 5));
         System.out.println(Estudante.getNumero_estudante(4, 3.));
+
+        System.out.println("\n" + "Sobrecarga com parâmetro de tipos diferentes: \n");
+        System.out.println(Estudante.sobrecarga("String"));
+        System.out.println(Estudante.sobrecarga(2));
     }
 }
 
@@ -20,5 +24,13 @@ class Estudante{
 
     public static int getNumero_estudante(int num, double valor){
         return (int) valor + num;
+    }
+
+    public static String sobrecarga(String sobrecarga){
+        return "Sobrecarga com " + sobrecarga;
+    }
+
+    public static String sobrecarga(int num){
+        return "Sobrecarga com inteiro " + num;
     }
 }

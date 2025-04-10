@@ -1,14 +1,25 @@
 package Interface;
 
+import java.util.ArrayList;
+
 public class Main {
 
-    public static void main(String[] args) {
-        Figura t = new Triangulo(1,2,3);
-        t.imprimir();
-        System.out.println(t.calcularArea());
+    public static void figuras(Figura f){
+        System.out.println(f.toString());
+    }
 
-        Figura c = new Circulo((float) 5.12);
-        c.imprimir();
-        System.out.println(c.calcularArea());
+    public static void main(String[] args) {
+        Figura t = new Triangulo();
+        t.print();
+
+        Figura c = new Circulo();
+        c.print();
+
+        Triangulo tt = new Triangulo();
+        tt = (Triangulo) t;
+
+        figuras(t);
+        figuras(c);
+        figuras(tt);
     }
 }

@@ -24,4 +24,16 @@ public class Animal {
     public int teste(){
         return campoEstatico;
     }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public String toString(){
+        return "Peso: " + peso + "\nAltura: " + altura + "\n";
+    }
 }
