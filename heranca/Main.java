@@ -21,23 +21,17 @@ public class Main {
         System.out.println(animal.teste());
 
         Animal animal2 = new Gato(60, 1.80);
-        Animal animal3 = new Cachorro(60, 1.80);
+        Animal cachorro = new Cachorro(60, 1.80);
 
         System.out.println(animal.toString());
         System.out.println(animal2.toString());
-        System.out.println(animal3.toString());
 
-        //System.out.println(cachorro.meu_peso()); eu não consigo acessar esse método
-        // da subclasse pq ele não foi definido na superclasse
-
+        // System.out.println(cachorro.meu_peso());// eu não consigo acessar esse método
+        // da subclasse pq ele não foi definido na superclass
         // é preciso fazer downcasting
 
-        Animal cachorro = new Cachorro(60, 1.80);
-        Animal gato = new Gato(60, 1.80);
-        //System.out.println((Cachorro) cachorro.meu_peso()); // nem com casting eu consigo acessar um método da subclasse
-
-        // Agora, isso daqui fuciona
         Cachorro c = (Cachorro) cachorro;
+
         System.out.println(c.meu_peso());
     }
 }

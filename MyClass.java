@@ -1,9 +1,16 @@
+import heranca.Animal;
+import sobrecarga.Pessoa;
+
 import java.util.ArrayList;
-import java.util.List;
-public class MyClass{
+
+public class MyClass extends Pessoa {
+
+    public void imprime(){
+        System.out.println("principal");
+    }
 
     public static void main(String args []){
-        ArrayList<Integer> bList = new ArrayList<>();
+        /*ArrayList<Integer> bList = new ArrayList<>();
         bList.add(18);
         bList.add(15);
 
@@ -23,6 +30,10 @@ public class MyClass{
         System.out.println(aList.containsAll(bList));
         System.out.println(aList.removeAll(bList));
         System.out.println(aList);
-        System.out.println(aList.indexOf(100));
+        System.out.println(aList.indexOf(100));*/
+
+        MyClass mc = new MyClass();
+
+        mc.acao();
     }
 }
