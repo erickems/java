@@ -31,7 +31,6 @@ public class Main {
         // é preciso fazer downcasting
 
         Cachorro c = (Cachorro) cachorro;
-
         System.out.println(c.meu_peso());
     }
 }

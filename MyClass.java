@@ -1,39 +1,23 @@
+import Interface.Circulo;
+import Interface.Figura;
+import Interface.Triangulo;
 import heranca.Animal;
 import sobrecarga.Pessoa;
 
 import java.util.ArrayList;
 
-public class MyClass extends Pessoa {
+public class MyClass {
 
-    public void imprime(){
-        System.out.println("principal");
+    public void sla(Figura f){
+        f.print();
     }
 
     public static void main(String args []){
-        /*ArrayList<Integer> bList = new ArrayList<>();
-        bList.add(18);
-        bList.add(15);
 
-        List<Integer> aList = new ArrayList<>(); //mais flexível e desacoplado
-
-        for(int i = 0; i < 5; i++){
-            aList.add((i+2) * 3);
-        }
-
-        System.out.println("toString() -- " + aList.toString());
-        System.out.println("get(2) -- " + aList.get(2));
-        System.out.println("indexOf(7) -- " + aList.indexOf(7));
-        System.out.println("set(2, 100)  -- " + aList.set(2, 100));
-        aList.add(2, 500);
-        System.out.println("add(2, 500) -- " + aList.toString());
-        System.out.println("size() -- " + aList.size());
-        System.out.println(aList.containsAll(bList));
-        System.out.println(aList.removeAll(bList));
-        System.out.println(aList);
-        System.out.println(aList.indexOf(100));*/
+        // o java entende que c é do tipo de Figura, mesmo não sendo criado como um tipo
+        Circulo c = new Circulo();
 
         MyClass mc = new MyClass();
-
-        mc.acao();
+        mc.sla(c);
     }
 }

@@ -1,8 +1,11 @@
 package sobrecarga;
 
-public abstract class Pessoa {
+public class Pessoa {
+
+    public String nome = "erick";
+
     public void imprime(){
-        System.out.println("imprime");
+        System.out.println(nome);
     }
 
     public void acao(){
