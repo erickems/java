@@ -21,5 +21,9 @@ public class Main {
         figuras(t);
         figuras(c);
         figuras(tt);
+        
+        String texto = "";
+        
+        String x = (texto == "Triangulo") ? "Sim" : "Não";
     }
 }
